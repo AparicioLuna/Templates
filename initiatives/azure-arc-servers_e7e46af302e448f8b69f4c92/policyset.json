@@ -1,0 +1,50 @@
+{
+ "properties": {
+  "displayName": "azure-arc-servers",
+  "policyType": "Custom",
+  "metadata": {
+   "category": "azure-arc",
+   "version": "1.0",
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/25a7b8e6-9cf0-4784-9cf9-73e7040f5708"
+   },
+   "createdBy": "9f1baa5a-bfb7-4a3f-8f98-903f241405f4",
+   "createdOn": "2021-04-08T16:56:38.6654741Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "parameters": {},
+  "policyDefinitions": [
+   {
+    "policyDefinitionReferenceId": "[Preview]: Deploy Log Analytics agent to Windows Azure Arc machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/69af7d4a-7b18-4044-93a9-2651498ef203",
+    "parameters": {
+     "logAnalytics": {
+      "value": "/subscriptions/25a7b8e6-9cf0-4784-9cf9-73e7040f5708/resourcegroups/czuw2-inf-np-rgp-01/providers/microsoft.operationalinsights/workspaces/czue-inf-np-ala-001"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Deploy Log Analytics agent to Linux Azure Arc machines_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/9d2b61b4-1d14-4a63-be30-d4498e7ad2cf",
+    "parameters": {
+     "logAnalytics": {
+      "value": "/subscriptions/25a7b8e6-9cf0-4784-9cf9-73e7040f5708/resourcegroups/czuw2-inf-np-rgp-01/providers/microsoft.operationalinsights/workspaces/czue-inf-np-ala-001"
+     }
+    },
+    "groupNames": []
+   },
+   {
+    "policyDefinitionReferenceId": "[Preview]: Configure machines to receive the Qualys vulnerability assessment agent_1",
+    "policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/13ce0167-8ca6-4048-8e6b-f996402e3c1b",
+    "parameters": {},
+    "groupNames": []
+   }
+  ],
+  "policyDefinitionGroups": []
+ },
+ "id": "/subscriptions/25a7b8e6-9cf0-4784-9cf9-73e7040f5708/providers/Microsoft.Authorization/policySetDefinitions/e7e46af302e448f8b69f4c92",
+ "type": "Microsoft.Authorization/policySetDefinitions",
+ "name": "e7e46af302e448f8b69f4c92"
+}
